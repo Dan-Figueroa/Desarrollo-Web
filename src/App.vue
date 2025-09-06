@@ -1,26 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <main class="app-shell">
+    <RfcForm />
+  </main>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import RfcForm from './components/RfcForm.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: { RfcForm }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #eef7f3 0%, #f7fafc 100%);
 }
 </style>
