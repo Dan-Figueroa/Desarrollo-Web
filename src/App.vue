@@ -1,15 +1,15 @@
 <template>
   <main class="app-shell">
-    <RfcForm />
+    <PuntoVenta />
   </main>
 </template>
 
 <script>
-import RfcForm from './components/RfcForm.vue'
+import PuntoVenta from './components/PuntoVenta.vue'
 
 export default {
   name: 'App',
-  components: { RfcForm }
+  components: { PuntoVenta }
 }
 </script>
 
